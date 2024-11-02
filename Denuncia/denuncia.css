@@ -59,7 +59,9 @@ nav {
 }
 
 img {
-  margin: 20px 0px 20px 450px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 700px;
   width: 350px;
   height: 300px;
 }
@@ -90,8 +92,9 @@ p {
   padding: 0;
   margin: 0%;
   font-size: 20px;
-  margin: 0px 0px 10px 50px;
+  margin: 0px 0px 10px 100px;
 }
+
 .texto {
   background-color: rgb(230, 216, 216);
   border-radius: 30px;
@@ -100,7 +103,7 @@ p {
   height: auto;
   width: 80%;
   margin: 0%;
-  margin: 0px 0px 10px 120px;
+  margin: 0px 0px 10px 180px;
 }
 .container {
   display: flex;
@@ -216,10 +219,13 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+margin: 0 ;
+}
 
 .logo img {
   width: 250px;
-  margin: 0px 0px 0px 70px;
+  margin: 0px 0px 0px 150px;
 }
 
 nav ul {
@@ -268,7 +274,7 @@ nav li a {
   }
   img {
     width: 250px;
-    margin: 0px 0px 30px 90px;
+    margin: 0px 0px 20px 70px;
     height: auto;
 
   }
@@ -279,7 +285,7 @@ nav li a {
     height: 70%;
     padding: 0 ;
     align-self: center;
-    margin: 0px 0px 30px 15px;
+    margin: 0px 0px 30px 10px;
   }
 
   .container {
@@ -368,6 +374,7 @@ nav li a {
     padding: 1px;
     width: auto;
     text-align: center;
+    border-radius:5px;
   
   }
 
@@ -379,7 +386,7 @@ nav li a {
   }
 
     .logo img {
-      width: 220px;
+      width: 200px;
       height: 150px;
       margin: 0px 0px 0px 100px;
     
@@ -387,16 +394,18 @@ nav li a {
   .logo{
     align-items: center;
     margin: 0%;
+    width: 100%;
+    
   }
 
   nav ul {
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 30px;
     font-weight: 200;
     width: 100%;
     
   } .copyright {
-  font-size: 12px;
-     margin: 0px 0px 0px 50px;
+  font-size: 10px;
+    margin: 0px 0px 0px 20px;
      color: #666;
   }
   .copyright-1{
@@ -407,8 +416,8 @@ nav li a {
   nav li a {
     color: #000000;
     padding: 0;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 200;
     margin: 10 auto;
   }
 
