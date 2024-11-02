@@ -146,7 +146,7 @@ p {
   background-color: #08928b;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
 }
 
 .servico-card img {
@@ -183,7 +183,10 @@ p {
 
 form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 50);
+  padding: 10px;
 }
 
 label {
@@ -191,11 +194,10 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="radio"]   {
+input[type="radio"] {
   margin-right: 5px;
-  margin: 0px 0px 50px 200px;
+  margin: 0px 0px 10px 10px;
 }
-
 textarea {
   width: 90%;
   height: 100px;
@@ -295,6 +297,9 @@ nav li a {
     align-self: center;
     margin: 0px 0px 30px 10px;
   }
+  .introducao-ima{
+  margin: 0px 200px 10px 70px;
+}
 
   .container {
     flex-wrap: wrap;
@@ -303,7 +308,7 @@ nav li a {
     width: 78%;
     height: auto;
     margin: 30px 8px 30px 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
     border: 2px solid #0f0101;
   }
 
@@ -330,6 +335,7 @@ nav li a {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 10px 0px 10px 0px;
+    width: 95%;
   }
 
   .servico-card {
@@ -351,9 +357,9 @@ nav li a {
   }
 
   .servico-card img {
-    width: 150px;
-    height: 120px;
-    margin: 0px 0px 0px 90px;
+    width: 180px;
+    height: 150px;
+    margin: 0;
   }
   h2 {
     font-size: 15px;
@@ -395,7 +401,7 @@ nav li a {
     .logo img {
       width: 200px;
       height: 150px;
-      margin: 0px 0px 0px 100px;
+      margin: 0;
     
   }
   .logo{
@@ -425,7 +431,7 @@ nav li a {
     padding: 0;
     font-size: 12px;
     font-weight: 200;
-    margin: 10 auto;
+    margin: 0px 0px 0px 30px;
   }
 
  

@@ -336,7 +336,7 @@ header {
   background-color: #56851e;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
   }
 
     .Paragrafo-car{
@@ -366,6 +366,7 @@ header {
     margin: auto;
     border: 3px solid #0f0101; 
     border-radius: 5px;
+    
   }
   .gallery {
 
