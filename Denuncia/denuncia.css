@@ -10,7 +10,7 @@ main {
   background: #dce1d6;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: auto;
   align-items: center;
 }
 .logo {
@@ -60,18 +60,19 @@ nav {
 .introducao-ima{
 
     display: flex;
-  height: 70%;
-  width: 50%;
+  height: auto;
+  width: 30%;
   padding: 0 ;
-  margin: 0%;
-  margin: 0px 200px 10px 200px;
+  margin: auto;
+
 }
 
 img {
  
   width: 350px;
   height: 300px;
-  margin: 0px 0px 0px 300px;
+  margin:10% 0% 5% 25%;
+
 }
 
 
@@ -94,13 +95,13 @@ p {
   align-self: center;
   background-color: rgb(230, 216, 216);
   border-radius: 25px;
-  border: 2px solid black;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 190, 0, 50);
   height: 70%;
   width: 90%;
   padding: 0;
-  margin: 0%;
   font-size: 20px;
-  margin: 0px 0px 10px 80px;
+  margin: auto;
 }
 
 .texto {
@@ -110,9 +111,9 @@ p {
   place-items: center;
   height: auto;
   width: 80%;
-  margin: 0%;
-  margin: 0px 0px 10px 140px;
+  margin:auto;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -130,7 +131,7 @@ p {
   height: auto;
   display: flex;
   justify-content: space-around;
-  margin: 20px 0px 40px 0px;
+  margin: 5% 0px 6% 0px;
 }
 
 .servicos-container {
@@ -182,6 +183,7 @@ p {
 }
 
 form {
+  
   max-width: 600px;
   margin: 0 auto; 
   border-radius: 15px;
@@ -211,12 +213,12 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2% 0% 2% 35%;
   cursor: pointer;
 }
 
 footer {
-  margin: 30px 0px 0px 0px;
+  margin:  10% 0% 0% 0%;
   align-items: center;
   background-color: #0aa52c;
   padding: 5px;
@@ -255,7 +257,7 @@ nav li a {
 }
 
 .copyright {
-  font-size: 16px;
+  font-size: 17px;
   color: #666;
   white-space: nowrap;
   margin: 0px 0px 0px 70px;
@@ -345,7 +347,7 @@ nav li a {
     width: 320px;
     padding: 10px;
     margin: 20px;
-    background-color: #56851e;
+    background-color: #08928b;
     border-radius: 8px;
     text-align: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);

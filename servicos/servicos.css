@@ -3,6 +3,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   margin: 0%;
+  width: 100%;
 }
 
 img {
@@ -11,7 +12,7 @@ img {
   margin: 0px 0px 0px 30px;
 }
 header {
-  margin: 0px 0px 0px 0px;
+  margin: 0 auto;
   background: white;
   position: relative;
   display: flex;
@@ -51,23 +52,28 @@ nav {
 }
 
 .servicos-container {
-margin: auto;
+margin:  1% auto;
 display: flex;
   justify-content: space-around;
+
   
 }
+
 
 .servico-card {
   width: 300px;
   padding: 10px;
-  margin: 10px;
+  margin: 0% ;
   background-color: #04b98c;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 50);
+  border: 1px solid black;
 
 }
-
+.servico-card:hover {
+    background-color: #0aa52c;
+  }
 .servico-card img {
   width: 110px;
   height: 110px;
@@ -92,25 +98,25 @@ display: flex;
   background-color: #218838;
 }
 
+
+.introducao {
+  width: 100%;
+  align-self: center;
+  margin: 0%;
+  font-size: 20px;
+  margin: 2% 0% 0% 0%;
+}
+ .introducao p {
+  margin: 0% 0% 0% 24%;
+ }
 h1 {
   color: #284701;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 30px;
   font-weight: 600;
-}
-.introducao {
-  display: flex;
-  align-self: center;
-  background-color: rgb(230, 216, 216);
-  border-radius: 25px;
-  border: 2px solid black;
-  height: 70%;
-  width: 90%;
-  padding: 0;
-  margin: 0%;
-  font-size: 20px;
-  margin: 0px 0px 10px 80px;
+  margin: 5% 0% 2% 0%;
+  
 }
 
 form {
@@ -119,6 +125,7 @@ form {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+
 }
 
 label {
@@ -144,7 +151,7 @@ textarea {
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
-  padding: 15px 10px;
+  padding: 2.5% 5.3%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -157,7 +164,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-  margin: 30px 0px 0px 0px;
+  margin: 6% 0% 0% 0%;;
   align-items: center;
   background-color: #0aa52c;
   padding: 5px;
@@ -218,7 +225,7 @@ nav li a {
     padding: 0;
     align-items: center;
     margin: 0;
-    width: 100%;
+    width: auto;
   }
   .servicos-container {
     display: flex;
@@ -234,7 +241,7 @@ nav li a {
     width: 320px;
     padding: 10px;
     margin: 20px;
-    background-color: #56851e;
+    background-color: #04b98c;
     border-radius: 8px;
     text-align: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -255,15 +262,23 @@ nav li a {
     flex-wrap: wrap;
   }
   h1 {
-    font-size: 1.3rem;
+    align-self: center;  
+     
+    margin: 4% 0% 5% 0%;
+    font-size: 1.4rem;
     align-self: center;
-    margin: auto;
-    padding: 2%;
+    padding: 2%; 
   }
 
   p {
     font-size: 15px;
     width: 95%;
+    margin: auto;
+    padding: 2%;
+  }
+  .introducao p {
+    width: 80%;
+    font-size: 16px;
     margin: auto;
     padding: 2%;
   }
@@ -323,7 +338,7 @@ nav li a {
   }
   .logo {
     align-items: center;
-    margin: 0%;
+    margin: 0% 0% 0% 5%;
     width: 100%;
   }
 
@@ -334,7 +349,7 @@ nav li a {
   }
   .copyright {
     font-size: 10px;
-    margin: 0px 0px 0px 90px;
+    margin: 0% 0% 0% 22%;
     color: #666;
   }
   .copyright-1 {
@@ -343,9 +358,9 @@ nav li a {
 
   nav li a {
     color: #000000;
-    padding: 0;
+    padding: 0px;
     font-size: 12px;
     font-weight: 300;
-    margin: 10 auto;
+    margin: 0% 0% 0% 15px;
   }
 }
