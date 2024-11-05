@@ -123,8 +123,9 @@ form {
   width: 40%;
   margin: 0 auto;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #0c0101;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 50);
 
 }
 
@@ -156,7 +157,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   width: auto;
-  margin: 10px 0px 0px 180px;
+  margin: 10% 0% 2% 40%;
 }
 
 input[type="submit"]:hover {
