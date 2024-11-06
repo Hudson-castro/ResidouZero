@@ -61,6 +61,25 @@ nav {
   cursor: pointer;
   margin: 0px 40px 0px 0px;
 }
+.search-container {
+  position: relative;
+  height: 70vh;
+  background-image: url(../imagens/denunciar01.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destaque {
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
 .introducao-ima {
   display: flex;
   height: auto;
@@ -175,8 +194,9 @@ p {
   margin: auto;
 }
 
-.servico-card button:hover {
-  background-color: #218838;
+.servico-card:hover {
+  background-color: #D9F0E0;
+  
 }
 
 form {

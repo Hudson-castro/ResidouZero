@@ -147,6 +147,10 @@ button {
   cursor: pointer;
   margin: auto;
 }
+.servico-card:hover {
+  background-color: #D9F0E0;
+  
+}
 
 .servico-card button:hover {
   background-color: #218838;

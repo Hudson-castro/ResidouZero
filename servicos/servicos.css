@@ -50,6 +50,30 @@ nav {
   cursor: pointer;
   margin: 0px 50px 0px 0px;
 }
+.search-container {
+  position: relative;
+  height: 80vh;
+  background-image: url(../imagens/volunteers-working-together-full-shot.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0% 10% 0%;
+}
+.destaque{
+  background: green;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0% 0% 50% 9%;
+  border-radius: 30px;
+  width: 90%;
+}
 
 .servicos-container {
 margin:  1% auto;
@@ -72,8 +96,10 @@ display: flex;
 
 }
 .servico-card:hover {
-    background-color: #0aa52c;
-  }
+    background-color: #D9F0E0;
+    
+}
+
 .servico-card img {
   width: 110px;
   height: 110px;
