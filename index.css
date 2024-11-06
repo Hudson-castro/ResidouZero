@@ -12,7 +12,7 @@ img {
   margin: 0px 0px 0px 50px;
 }
 header {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   background: #dce1d6;
   position: relative;
   display: flex;
@@ -58,8 +58,29 @@ h1 {
   font-size: 30px;
   font-weight: 600;
 }
+
+.principal {
+  background-image: url(imagens/imaPrincipal.jpeg);
+  background-size: cover;
+  background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+  height: 80vh;
+  margin: 0;
+  display: flex; /* Transforma o container em um flex container */
+  justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  margin: 0% 0% 10% 0% ;
+}
+
+.principal-text {
+  margin: 25.5% 0% 0% 0% ;
+  text-align: center;
+  color: #fff; /* Define a cor do texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo transparente para melhor contraste */
+  padding: 20px; /* Adiciona espaço interno ao texto */
+}
+
 .introducao {
-  
+ 
   margin: 80px 200px 50px 200px;
   text-align: center;
 }
@@ -125,13 +146,14 @@ p {
   margin: 0;
   display: flex;
   justify-content: space-around;
+   
 }
 
 .servico-card {
   width: 300px;
   padding: 10px;
   margin: 10px;
-  background-color: #08928b;
+  background-color: #3CA365;
   border-radius: 8px;
   text-align: center;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
@@ -166,15 +188,12 @@ p {
   margin: auto;
 }
 .servico-card:hover {
-  background-color: #3CA365;
+  background-color: #D9F0E0;
   
 }
-.servico-card:hover h3{
-  color: #074f24;
-}
-.servico-card:hover p{
-  color: #E8f0E6;
-}
+
+
+
 
 .map-container {
   width: 100%;
@@ -293,13 +312,15 @@ header {
  }
 
   main {
-    background: rgb(212, 212, 221);
+   
     padding: 0;
     align-items: center;
     margin: 0 ;
     width: 100%;
   }
-
+  .principal-text {
+    margin: 90% 0% 0% 0% ;
+  }
   .introducao {
     align-items: center;
     width: 90%;
@@ -367,7 +388,6 @@ header {
   width: 320px;
   padding: 10px;
   margin: 20px;
-  background-color: #56851e;
   border-radius: 8px;
   text-align: center;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
@@ -389,7 +409,6 @@ header {
   margin: 0;
   padding: 10px;
   border-radius: 23px;
-  background:#589b15 ;
   width: 90%;
   margin: 30px 10px 30px 10px;
  
