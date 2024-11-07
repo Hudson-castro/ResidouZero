@@ -1,11 +1,12 @@
-
-
 body {
   font-family: "Montserrat", sans-serif;
   background: #bac3ae;
   margin: 0%;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 img {
   width: 10%;
   height: 10%;
@@ -64,23 +65,43 @@ h1 {
   background-size: cover;
   background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
   height: 80vh;
+  width: 100%;
   margin: 0;
   display: flex; /* Transforma o container em um flex container */
   justify-content: center; /* Centraliza os elementos filhos horizontalmente */
   align-items: center; /* Centraliza os elementos filhos verticalmente */
-  margin: 0% 0% 10% 0% ;
+  margin: 0% 0% 10% 0%;
 }
 
+.principal-text h1 {
+  color: aliceblue;
+  font-size: 35px;
+  margin: 22% 0% 0% 0%;
+}
+.principal-text p {
+  color: #06f71a;
+  font-size: 18px;
+  margin: auto;
+  width: 100%;
+}
 .principal-text {
-  margin: 25.5% 0% 0% 0% ;
+  margin: 0% 0% 0% 0%;
   text-align: center;
   color: #fff; /* Define a cor do texto */
-  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo transparente para melhor contraste */
-  padding: 20px; /* Adiciona espaço interno ao texto */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adiciona um fundo transparente para me contraste */
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .introducao {
- 
   margin: 80px 200px 50px 200px;
   text-align: center;
 }
@@ -146,14 +167,13 @@ p {
   margin: 0;
   display: flex;
   justify-content: space-around;
-   
 }
 
 .servico-card {
   width: 300px;
   padding: 10px;
   margin: 10px;
-  background-color: #3CA365;
+  background-color: #3ca365;
   border-radius: 8px;
   text-align: center;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
@@ -188,12 +208,8 @@ p {
   margin: auto;
 }
 .servico-card:hover {
-  background-color: #D9F0E0;
-  
+  background-color: #d9f0e0;
 }
-
-
-
 
 .map-container {
   width: 100%;
@@ -204,28 +220,22 @@ p {
   border-radius: 4px;
 }
 .gallery {
-
-display: flex;
-align-items: center;
-margin: 0px 0px 0px 0px;
-justify-content: center;  
-border: 4px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  justify-content: center;
+  border: 4px;
 }
 .gallery img {
-
-  width: 500PX;
+  width: 500px;
   height: 300px;
   margin: 10px;
-
 }
-
-
 
 form {
   margin: 20px auto;
   width: 300px;
   font-size: 12px;
-  
 }
 input[type="email"] {
   width: 100%;
@@ -235,7 +245,7 @@ input[type="email"] {
   border-radius: 8px;
 }
 button {
-  background-color: #536b35; 
+  background-color: #536b35;
   color: white;
   padding: 15px 20px;
   border: none;
@@ -250,27 +260,24 @@ footer {
   align-items: center;
   background-color: #0aa52c;
   padding: 5px;
-
 }
 
 .footer-container {
   width: auto;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
- 
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-  margin: 0 ;
-  }
-  
-  .logo img {
-    width: 250px;
-    margin: 0px 0px 0px 150px;
+.logo {
+  margin: 0;
+}
 
-  }
+.logo img {
+  width: 250px;
+  margin: 0px 0px 0px 150px;
+}
 
 nav ul {
   padding: 10px;
@@ -293,34 +300,49 @@ nav li a {
   color: #666;
   margin-top: 20px;
   white-space: nowrap;
-
 }
 
 /*================================================================================================*/
 
 @media (max-width: 450px) {
-  
-header {
-  display:none ;
- }
+  header {
+    display: none;
+  }
 
- body{
- 
-  margin: 0;
-  padding: 0;
-  width: 100%;
- }
-
-  main {
-   
+  body {
+    margin: 0;
     padding: 0;
-    align-items: center;
-    margin: 0 ;
     width: 100%;
   }
-  .principal-text {
-    margin: 90% 0% 0% 0% ;
+
+  main {
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    width: 100%;
   }
+
+  .principal {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+
+  }
+
+  .principal-text {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  .principal-text p {
+    font-size: 11px;
+  }
+  .principal-text h1 {
+    font-size: 19px;
+    width: 100%;
+   
+  }
+
   .introducao {
     align-items: center;
     width: 90%;
@@ -329,118 +351,108 @@ header {
     margin: 0;
     align-self: center;
     margin: 0px 0px 30px 25px;
-    
   }
 
   .container {
-    flex-wrap: wrap; 
-   display: flex;
-  justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
     width: 78%;
     height: auto;
     margin: 30px 8px 30px 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.10);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border: 2px solid #0f0101;
-   
   }
 
   .texto {
     flex-wrap: wrap;
-  width: 100%;
-  font-size: 1rem;
-  height: 80%;
+    width: 100%;
+    font-size: 1rem;
+    height: 80%;
   }
 
   .imagem-destaque {
-  width: 200px; 
-  height: auto;
+    width: 200px;
+    height: auto;
   }
 
   h1 {
-  font-size: 1.1rem;
-  align-self: center;
-
+    font-size: 1.1rem;
+    align-self: center;
   }
 
   h2 {
-  font-size: 15px;
-  align-items: center;
-  width: 100%;
-  height: auto;
+    font-size: 15px;
+    align-items: center;
+    width: 100%;
+    height: auto;
   }
 
   p {
-  font-size: 10px;
-  width: 80%;
-  } 
+    font-size: 10px;
+    width: 80%;
+  }
 
   .servicos-container {
-   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around;
-  margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0px 40px 0px;
   }
 
   .servico-card {
     border: 3px solid #0f0101;
-   flex: 1; 
-  min-width: 300px; 
-  width: 320px;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
+    flex: 1;
+    min-width: 300px;
+    width: 320px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 50);
   }
 
-    .Paragrafo-car{
-  font-size: 16px;
-  color: #474944;
+  .Paragrafo-car {
+    font-size: 16px;
+    color: #474944;
   }
 
   .servico-card img {
-  width: 100px;
-  height: 100px;
-  margin: 0%;
-  margin-bottom: 0px;
-
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+    margin-bottom: 0px;
   }
-  .container-123{
-  margin: 0;
-  padding: 10px;
-  border-radius: 23px;
-  width: 90%;
-  margin: 30px 10px 30px 10px;
- 
+  .container-123 {
+    margin: 0;
+    padding: 10px;
+    border-radius: 23px;
+    width: 90%;
+    margin: 30px 10px 30px 10px;
   }
   .map-container {
     width: 300px;
     height: 200px;
     margin: auto;
-    border: 3px solid #0f0101; 
+    border: 3px solid #0f0101;
     border-radius: 5px;
-    
   }
   .gallery {
-
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .gallery img {
-  
-    width: 350PX;
+    width: 350px;
     height: 300px;
     margin: 10px;
-  
   }
-  
+
   form {
     margin: 20px auto;
     width: 200px;
     font-size: 8px;
-  
   }
   input[type="email"] {
     width: 100%;
@@ -448,76 +460,63 @@ header {
     margin-bottom: 10px;
     background: #1a3b11;
     border-radius: 8px;
-   
   }
   button {
-    background-color: #02860d; 
+    background-color: #02860d;
     color: white;
     padding: 10px 5px;
     border-radius: 10px;
     margin: 20px 30px 0px 30px;
     width: 50%;
-    
   }
-  
+
   footer {
     align-items: center;
     background-color: #0aa531;
     padding: 1px;
     width: auto;
-
-
   }
-  
+
   .footer-container {
     margin: 0 auto;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex-wrap: wrap; 
-   
+    flex-wrap: wrap;
   }
-  
-
 
   .logo img {
     width: 200px;
     height: 150px;
     margin: 0px 0px 0px 100px;
-  
-}
-.logo{
-  align-items: center;
-  margin: 0%;
-  width: 100%;
-  
-}
+  }
+  .logo {
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+  }
 
-nav ul {
-  margin: 0px 0px 0px 30px;
-  font-weight: 200;
-  width: 100%;
-  
-} .copyright {
-font-size: 10px;
-  margin: 0px 0px 0px 45px;
-   color: #666;
-}
-.copyright-1{
-  display: none;
+  nav ul {
+    margin: 0px 0px 0px 30px;
+    font-weight: 200;
+    width: 100%;
+  }
+  .copyright {
+    font-size: 10px;
+    margin: 0px 0px 0px 45px;
+    color: #666;
+  }
+  .copyright-1 {
+    display: none;
+  }
 
+  nav li a {
+    color: #000000;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10 auto;
+  }
 }
-
-nav li a {
-  color: #000000;
-  padding: 0;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 10 auto;
-}
-
-  
-}
-
 
 /*   celulares 
 @media (max-width: 450px) {

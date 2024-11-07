@@ -60,9 +60,10 @@ nav {
   margin: 0px 40px 0px 0px;
 }
 
-.search-container {
+.principal {
   position: relative;
-  height: 70vh; /* Ajuste a altura conforme necessário */
+  height: 80vh;
+  width: 100%;
   background-image: url(../imagens/paginapesquisa.jpg);
   background-size: cover;
   background-position: center;
@@ -224,9 +225,16 @@ nav li a {
     text-decoration: none;
     color: white;
   }
+  .principal {
+       
+    height: 30vh;
+    width: 100%;
+  
+} 
+
   input[type="text"] {
     flex: 1;
-    padding: 10px;
+    padding: 5px;
     border: 5px;
     outline: invert;
     border-radius: 3%;
@@ -234,6 +242,7 @@ nav li a {
     margin: 0% 2% 0% 5%;
     filter: none;
   }
+  
   
   button {
     margin: 0% 5% 0% 0%;
