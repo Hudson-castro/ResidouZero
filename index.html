@@ -10,29 +10,58 @@
 </head>
 
 <body>
+
   <header>
 
-    <img src="imagens/ResiduoZero.png" alt="logo" />
+    <div class="container-menu">
 
-    <nav>
+      <div class="central"><img src="imagens/ResiduoZero.png" alt="logo " /></div>
+
+      <div class="menu">
+        <nav>
+          <a class="link-header" href="../index.html">ResiduoZero</a>
+          <a class="link-header" href="sobre/sobre.html">Sobre</a>
+          <a class="link-header" href="servicos/servicos.html">Serviços</a>
+          <a class="link-header" href="Denuncia/denuncia.html">Denuncia</a>
+          <a class="link-header" href="blog/blog.html">Blog</a>
+          <a href="login/login.html" class="button-header">Conecte-se</a>
+        </nav>
 
 
-      <a class="link-header" href="../index.html">ResiduoZero</a>
-      <a class="link-header" href="sobre/sobre.html">Sobre</a>
-      <a class="link-header" href="servicos/servicos.html">Serviços</a>
-      <a class="link-header" href="Denuncia/denuncia.html">Denuncia</a>
-      <a class="link-header" href="blog/blog.html">Blog</a>
-      <a href="login/login.html" class="button-header">Conecte-se</a>
-    </nav>
+      </div>
 
-  </header>
+      <button onclick="animar()"   id="botao">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+
+     </button>
+     
+
+      <div class="menu-mobile" id="menu-mobile">
+        <nav>
+          <a class="link-header" href="../index.html">ResiduoZero</a>
+          <a class="link-header" href="sobre/sobre.html">Sobre</a>
+          <a class="link-header" href="servicos/servicos.html">Serviços</a>
+          <a class="link-header" href="Denuncia/denuncia.html">Denuncia</a>
+          <a class="link-header" href="blog/blog.html">Blog</a>
+          <a href="login/login.html"  class="link-header"  >Conecte-se</a>
+        </nav>
+
+      </div>
+
+    </div>
+
+
+
+  </header> <!-- -->
 
   <main>
     <section class="principal">
       <div class="principal-text">
 
         <h1>Por quê você deveria se importar?</h1>
-        <p >
+        <p>
           A coleta seletiva é o primeiro passo para um meio ambiente mais
           saudável. Com o ResiduoZero , você encontra tudo o que precisa para
           separar o lixo corretamente e encontrar os pontos de coleta mais
@@ -146,8 +175,7 @@
       <h1>Ajude-nos a fazer mais</h1>
 
       <p>
-        Use Residouzero todos os dias denunciar lixões ilegais e encontrar
-        pontos de reciclagem para o seu lixo.
+        Com o Residouzero, ajude a manter a cidade limpa: denuncie lixões ilegais e encontre locais para reciclar.
       </p>
     </section>
     <section class="container-gallery">
@@ -207,6 +235,7 @@
       </div>
     </footer>
   </main>
+  <script src="animar.js"> </script>
 </body>
 
 </html>
