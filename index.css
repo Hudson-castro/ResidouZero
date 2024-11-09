@@ -326,7 +326,7 @@ nav li a {
   width: 100%;
   height: 100%;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   overflow: hidden;
 
 }
@@ -335,7 +335,7 @@ nav li a {
   padding: 6px;
 }
 .menu-mobile nav a {
-  color: rgb(94, 233, 94);
+  color: rgb(162, 241, 162);
   text-decoration: none;
   display: block;
   padding: 3% 26%;
@@ -371,19 +371,19 @@ nav li a {
   transition: 0.2s;
  
 }
-#botao.ativar {
+#botao.ligar {
   border: 4px solid red;
 }
 
-#botao.ativar .linha:nth-child(1) {
+#botao.ligar .linha:nth-child(1) {
   transform: translateY(14px) rotate(-30deg);
   background-color: red;
 }
-#botao.ativar .linha:nth-child(3) {
+#botao.ligar .linha:nth-child(3) {
   transform: translateY(-14px) rotate(30deg);
   background-color: red;
 }
-#botao.ativar .linha:nth-child(2) {
+#botao.ligar .linha:nth-child(2) {
   width: 0;
 }
 
@@ -417,7 +417,7 @@ nav li a {
     width: auto;
   }
   .menu-mobile {
-    top: 23%;
+    top: 20%;
   }
   body {
     margin: 0;
@@ -427,7 +427,7 @@ nav li a {
   #botao {
     width: 70px;
     height: 70px;
-    borde: 4px Solid #ccc;
+    border: 4px Solid #ccc;
     border-radius: 15px;
     background: transparent;
     margin: 10% 3% 0% 0%;
