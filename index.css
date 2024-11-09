@@ -318,7 +318,7 @@ nav li a {
 /*===menu mobile===*/
 
 .menu-mobile {
-  background-color: #4b4747d7;
+  background-color: #dce1d6;
   backdrop-filter: blur(10px);
   position: absolute;
   top: 14%;
@@ -331,11 +331,11 @@ nav li a {
 
 }
 .menu-mobile .link-header {
-  margin: 4% 40% 0% 5%;
+  margin: 4% 60% 0% 5%;
   padding: 6px;
 }
 .menu-mobile nav a {
-  color: rgb(162, 241, 162);
+  color: rgb(10, 24, 10);
   text-decoration: none;
   display: block;
   padding: 3% 26%;
@@ -343,7 +343,7 @@ nav li a {
 
 }
 .menu-mobile nav a:hover {
-  background-color: #c50707;
+  background-color: #5bd16f;
 }
 .menu-mobile.abrir {
   visibility: visible;
@@ -353,7 +353,7 @@ nav li a {
 #botao {
   width: 150px;
   height: 80px;
-  border: 4px Solid #045525;
+  border: 4px Solid #01160a;
   border-radius: 10px;
   background: transparent;
   outline: none;
@@ -427,9 +427,6 @@ nav li a {
   #botao {
     width: 70px;
     height: 70px;
-    border: 4px Solid #ccc;
-    border-radius: 15px;
-    background: transparent;
     margin: 10% 3% 0% 0%;
     padding: 2px;
 
