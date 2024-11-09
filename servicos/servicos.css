@@ -1,32 +1,48 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f4;
+  background: #bac3ae;
   margin: 0%;
-  width: 100%;
+  width: auto;
 }
 a {
   text-decoration: none;
   color: white;
 }
-
-img {
-  width: 10%;
-  height: 10%;
-  margin: 0px 0px 0px 30px;
+.central {
+  background: #dce1d6;
+  margin: 0%;
+  width: 100%;
+  height: auto;
+  padding: 0%;
 }
-header {
-  margin: 0 auto;
-  background: white;
+.central img {
+  width: 150px;
+  height: 150px;
+  margin: 0%;
+}
+
+.container-menu {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.menu {
+  margin: 0%;
+  background: #dce1d6;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  width: auto;
 }
-nav {
+.menu nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin: 0%;
 }
 
 .link-header {
@@ -34,7 +50,7 @@ nav {
   font-size: 20px;
   line-height: 29px;
   color: black;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 15px 0px 10px;
   float: left;
 }
 .button-header {
@@ -51,22 +67,19 @@ nav {
   font-weight: 600;
   line-height: 29px;
   cursor: pointer;
-  margin: 0px 50px 0px 0px;
-}
-.principal{
-  position: relative;
-  background-image: url(../imagens/volunteers-working-together-full-shot.jpg);
+  margin: 0px 40px 0px 0px;
+} 
+.principal {
+background-image: url(../imagens/volunteers-working-together-full-shot.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center; /* Centraliza a imagem horizontal e verticalmente */
-  height:90vh;
+  background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+  height: 80vh;
   width: 100%;
-  margin: 0% 0% 10% 0% ;
-  
-  
+  margin: 0;
+  display: flex; /* Transforma o container em um flex container */
+  justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  margin: 0% 0% 10% 0%;
 }
 .principal-text {
   margin: 0%  ;    
@@ -246,15 +259,128 @@ nav li a {
   margin: 0px 0px 0px 70px;
 }
 
-@media (max-width: 450px) {
-  header {
+
+/*===menu mobile===*/
+
+.menu-mobile {
+  background-color: #dce1d6;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 14%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: 0.2s;
+  overflow: hidden;
+
+}
+.menu-mobile .link-header {
+  margin: 4% 60% 0% 5%;
+  padding: 6px;
+}
+.menu-mobile nav a {
+  color: rgb(10, 24, 10);
+  text-decoration: none;
+  display: block;
+  padding: 3% 26%;
+  font-size: 15pt;
+
+}
+.menu-mobile nav a:hover {
+  background-color: #5bd16f;
+}
+.menu-mobile.abrir {
+  visibility: visible;
+  height: calc(100vh -77px);
+}
+
+#botao {
+  width: 150px;
+  height: 80px;
+  border: 4px Solid #01160a;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+.linha {
+  whdth: auto;
+  height: 9px;
+  background-color: #fff;
+  display: block;
+  margin-right: 10 auto;
+  position: relative;
+  transform-origin: center;
+  transition: 0.2s;
+ 
+}
+#botao.ligar {
+  border: 4px solid red;
+}
+
+#botao.ligar .linha:nth-child(1) {
+  transform: translateY(14px) rotate(-30deg);
+  background-color: red;
+}
+#botao.ligar .linha:nth-child(3) {
+  transform: translateY(-14px) rotate(30deg);
+  background-color: red;
+}
+#botao.ligar .linha:nth-child(2) {
+  width: 0;
+}
+
+@media (max-width: 780px) {
+  .menu {
     display: none;
   }
+  .central{
+    width: auto;
 
+  }
+
+  .menu-mobile.abrir {
+    visibility: visible;
+    height:55%;
+    padding: 2px;
+  }
+
+  #botao {
+    display: block;
+  }
+ 
+}
+/*================================================================================================*/
+
+@media (max-width: 450px) {
+  .menu {
+    display: none;
+  }
+  .central {
+    width: auto;
+  }
+  .menu-mobile {
+    top: 20%;
+  }
   body {
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+  #botao {
+    width: 70px;
+    height: 70px;
+    margin: 10% 3% 0% 0%;
+    padding: 2px;
+
+  }
+  .linha {
+    height: 5px;
+    background-color: green;
+    margin: 10px;
+
   }
 
   main {
@@ -404,7 +530,7 @@ nav li a {
 }
 
 nav ul {
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 10px;
   font-weight: 200;
   width: 100%;
   
