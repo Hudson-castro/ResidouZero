@@ -14,6 +14,7 @@ a {
   width: 100%;
   height: auto;
   padding: 0%;
+
 }
 .central img {
   width: 150px;
@@ -29,7 +30,7 @@ a {
 }
 
 .menu {
-  margin: 0%;
+
   background: #dce1d6;
   position: relative;
   display: flex;
@@ -37,12 +38,14 @@ a {
   align-items: center;
   cursor: pointer;
   width: auto;
+  margin: 0px 45px 0px 0px;
 }
 .menu nav {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 0%;
+
 }
 
 .link-header {
@@ -53,22 +56,15 @@ a {
   margin: 0px 15px 0px 10px;
   float: left;
 }
-.button-header {
-  background: green;
-  color: rgb(0, 0, 0);
-  border-radius: 30px;
-  width: 140px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: 600;
-  line-height: 29px;
-  cursor: pointer;
-  margin: 0px 40px 0px 0px;
+.link-header:hover {
+  background-color: #03972f;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid black;
+
+  
 }
+
 .principal {
   background-image: url(../imagens/paginapesquisa.jpg);
   background-size: cover;
